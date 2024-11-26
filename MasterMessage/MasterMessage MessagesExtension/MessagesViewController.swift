@@ -5,14 +5,22 @@
 //  Created by Reuben on 26/11/2024.
 //
 
-import UIKit
 import Messages
+import SwiftUI
 
 class MessagesViewController: MSMessagesAppViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let rootView = RootView()
+        let hostingController = UIHostingController(rootView: rootView)
+        
+        addChild(hostingController)
+        hostingController.view.frame = view.bounds
+        hostingController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        view.addSubview(hostingController.view)
+        hostingController.didMove(toParent: self)
     }
     
     // MARK: - Conversation Handling
