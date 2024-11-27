@@ -39,6 +39,7 @@
 		1B4A755A2CF68C66001E5FD3 /* MasterMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B4A75632CF68C68001E5FD3 /* MasterMessage MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MasterMessage MessagesExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B4A75682CF68C68001E5FD3 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		1B4A75972CF69B5A001E5FD3 /* MasterMessageiOSDuplicate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterMessageiOSDuplicate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -65,6 +66,11 @@
 			path = "MasterMessage MessagesExtension";
 			sourceTree = "<group>";
 		};
+		1B4A75982CF69B5A001E5FD3 /* MasterMessageiOSDuplicate */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MasterMessageiOSDuplicate;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1B4A75942CF69B5A001E5FD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,6 +97,7 @@
 			children = (
 				1B4A755C2CF68C66001E5FD3 /* MasterMessage */,
 				1B4A756A2CF68C68001E5FD3 /* MasterMessage MessagesExtension */,
+				1B4A75982CF69B5A001E5FD3 /* MasterMessageiOSDuplicate */,
 				1B4A75672CF68C68001E5FD3 /* Frameworks */,
 				1B4A755B2CF68C66001E5FD3 /* Products */,
 			);
@@ -94,6 +108,7 @@
 			children = (
 				1B4A755A2CF68C66001E5FD3 /* MasterMessage.app */,
 				1B4A75632CF68C68001E5FD3 /* MasterMessage MessagesExtension.appex */,
+				1B4A75972CF69B5A001E5FD3 /* MasterMessageiOSDuplicate.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +168,28 @@
 			productReference = 1B4A75632CF68C68001E5FD3 /* MasterMessage MessagesExtension.appex */;
 			productType = "com.apple.product-type.app-extension.messages";
 		};
+		1B4A75962CF69B5A001E5FD3 /* MasterMessageiOSDuplicate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B4A75A22CF69B5B001E5FD3 /* Build configuration list for PBXNativeTarget "MasterMessageiOSDuplicate" */;
+			buildPhases = (
+				1B4A75932CF69B5A001E5FD3 /* Sources */,
+				1B4A75942CF69B5A001E5FD3 /* Frameworks */,
+				1B4A75952CF69B5A001E5FD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1B4A75982CF69B5A001E5FD3 /* MasterMessageiOSDuplicate */,
+			);
+			name = MasterMessageiOSDuplicate;
+			packageProductDependencies = (
+			);
+			productName = MasterMessageiOSDuplicate;
+			productReference = 1B4A75972CF69B5A001E5FD3 /* MasterMessageiOSDuplicate.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -167,6 +204,9 @@
 						CreatedOnToolsVersion = 16.1;
 					};
 					1B4A75622CF68C68001E5FD3 = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					1B4A75962CF69B5A001E5FD3 = {
 						CreatedOnToolsVersion = 16.1;
 					};
 				};
@@ -187,6 +227,7 @@
 			targets = (
 				1B4A75592CF68C66001E5FD3 /* MasterMessage */,
 				1B4A75622CF68C68001E5FD3 /* MasterMessage MessagesExtension */,
+				1B4A75962CF69B5A001E5FD3 /* MasterMessageiOSDuplicate */,
 			);
 		};
 /* End PBXProject section */
@@ -206,10 +247,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1B4A75952CF69B5A001E5FD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1B4A755F2CF68C68001E5FD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B4A75932CF69B5A001E5FD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -440,6 +495,66 @@
 			};
 			name = Release;
 		};
+		1B4A75A32CF69B5B001E5FD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MasterMessageiOSDuplicate/Preview Content\"";
+				DEVELOPMENT_TEAM = WAFD9G7398;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reuben.MasterMessageiOSDuplicate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1B4A75A42CF69B5B001E5FD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MasterMessageiOSDuplicate/Preview Content\"";
+				DEVELOPMENT_TEAM = WAFD9G7398;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.reuben.MasterMessageiOSDuplicate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -466,6 +581,15 @@
 			buildConfigurations = (
 				1B4A757B2CF68C68001E5FD3 /* Debug */,
 				1B4A757C2CF68C68001E5FD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B4A75A22CF69B5B001E5FD3 /* Build configuration list for PBXNativeTarget "MasterMessageiOSDuplicate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B4A75A32CF69B5B001E5FD3 /* Debug */,
+				1B4A75A42CF69B5B001E5FD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
