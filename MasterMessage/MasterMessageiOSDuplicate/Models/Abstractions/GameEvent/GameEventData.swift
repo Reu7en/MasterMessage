@@ -8,9 +8,7 @@
 import Foundation
 
 protocol GameEventData: EventData  {
-    associatedtype TypeGameEventType: GameEventType
     associatedtype TypePlayer: Player
-    
-    var eventType: TypeGameEventType { get }
+
     var player: TypePlayer { get }
 }

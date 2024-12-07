@@ -11,7 +11,7 @@ import SwiftUI
 struct MasterMessageiOSDuplicateApp: App {
     var body: some Scene {
         WindowGroup {
-            RootView()
+            RootView(viewModel: RootViewModel())
         }
     }
 }

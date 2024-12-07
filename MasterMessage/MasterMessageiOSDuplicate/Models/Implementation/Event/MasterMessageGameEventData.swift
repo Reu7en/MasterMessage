@@ -9,11 +9,11 @@ import Foundation
 
 struct MasterMessageGameEventData: GameEventData {
     let eventType: MasterMessageGameEventType
-    let player: PlayerEntity
+    let player: MasterMessagePlayer
     
     init(
         eventType: MasterMessageGameEventType,
-        player: PlayerEntity
+        player: MasterMessagePlayer
     ) {
         self.eventType = eventType
         self.player = player

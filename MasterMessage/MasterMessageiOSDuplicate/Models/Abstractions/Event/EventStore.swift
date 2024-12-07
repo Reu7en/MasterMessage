@@ -13,4 +13,6 @@ protocol EventStore: Identifiable, Codable {
     var events: [TypeEvent] { get }
     var timestamp: Date { get }
     var id: UUID { get }
+    
+    mutating func addEvent(_ event: TypeEvent)
 }

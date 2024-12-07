@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol Player: Identifiable, Codable {
+protocol Player: Identifiable, Codable, Hashable {
     var id: UUID { get }
 }

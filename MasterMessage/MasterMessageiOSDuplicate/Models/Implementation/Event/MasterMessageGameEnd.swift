@@ -1,5 +1,5 @@
 //
-//  MasterMessageGameEvent.swift
+//  MasterMessageGameEnd.swift
 //  MasterMessage
 //
 //  Created by Reuben on 29/11/2024.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MasterMessageGameEvent: GameEvent {
+struct MasterMessageGameEnd: GameEndEvent {
     let eventData: MasterMessageGameEventData
     let timestamp: Date
     let id: UUID

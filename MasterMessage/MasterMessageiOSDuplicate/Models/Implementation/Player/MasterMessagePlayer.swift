@@ -1,5 +1,5 @@
 //
-//  PlayerEntity.swift
+//  MasterMessagePlayer.swift
 //  MasterMessageiOSDuplicate
 //
 //  Created by Reuben on 29/11/2024.
@@ -7,10 +7,12 @@
 
 import Foundation
 
-struct PlayerEntity: Player {
+struct MasterMessagePlayer: Player {
     let id: UUID
     
-    init() {
-        self.id = UUID()
+    init(
+        id: UUID
+    ) {
+        self.id = id
     }
 }
