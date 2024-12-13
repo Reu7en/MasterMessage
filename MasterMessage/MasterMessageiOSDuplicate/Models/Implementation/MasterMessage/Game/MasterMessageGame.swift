@@ -8,14 +8,12 @@
 import Foundation
 
 struct MasterMessageGame: Game {
-    static let minPlayers: Int = 2
-    static let maxPlayers: Int = 2
-    
     private(set) var eventStore: MasterMessageEventStore
     private(set) var state: MasterMessageGameState
+    private(set) var config: MasterMessageGameConfig
     
     var isValid: Bool {
-        self.state.isValid
+        self.state.isValid && self.config.isValid
     }
     
     var hasFinished: Bool {
@@ -29,6 +27,7 @@ struct MasterMessageGame: Game {
     ) {
         self.eventStore = eventStore
         self.state = MasterMessageGameState()
+        self.config = MasterMessageGameConfig()
         self.id = eventStore.id
         
         self.replayEvents()
@@ -45,11 +44,14 @@ struct MasterMessageGame: Game {
     ) {
         self.eventStore = MasterMessageEventStore(id: id)
         self.state = MasterMessageGameState()
+        self.config = MasterMessageGameConfig()
         self.id = id
     }
     
     mutating func applyEvent(_ event: any Event) {
         switch event {
+        case let configSet as MasterMessageConfigSet:
+            self.config = configSet.config
         case let playerSetup as MasterMessagePlayerSetup:
             self.state.addCombination(playerSetup.setup, for: playerSetup.player)
         case let playerMoved as MasterMessagePlayerMoved:

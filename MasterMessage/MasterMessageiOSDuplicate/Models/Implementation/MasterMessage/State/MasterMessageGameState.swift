@@ -13,8 +13,8 @@ struct MasterMessageGameState: GameState {
     private(set) var winner: Player?
     
     var isValid: Bool {
-        combinations.keys.count >= MasterMessageGame.minPlayers && moves.keys.count >= MasterMessageGame.minPlayers &&
-        combinations.keys.count <= MasterMessageGame.maxPlayers && moves.keys.count <= MasterMessageGame.maxPlayers
+        combinations.keys.count >= MasterMessageGameConfig.minPlayers && moves.keys.count >= MasterMessageGameConfig.minPlayers &&
+        combinations.keys.count <= MasterMessageGameConfig.maxPlayers && moves.keys.count <= MasterMessageGameConfig.maxPlayers
     }
     
     var hasFinished: Bool {
